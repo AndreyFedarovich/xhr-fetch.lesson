@@ -32,11 +32,6 @@ const body = {
 
 sendRequest('POST', requestUrl, body)
 	.then(data => console.log('POST:',data))
-	.then(() => {
-		sendRequest('GET', requestUrl)
-			.then(data =>  console.log('GET:', data))
-			.catch(error => console.error(error))
-	})
 	.catch(error => console.error(error))
 
 	
