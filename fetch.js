@@ -31,5 +31,4 @@ const body = {
 sendRequest('POST', requestUrl, body)
   .then(data => console.log('POST:',data))
   .catch(error => console.error(error))
-
   
